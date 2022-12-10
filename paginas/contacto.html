@@ -3,99 +3,167 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto</title>
-    <link rel="stylesheet" href="../styles/styles.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <meta name="viewport" content="¿Tenes algun problema, queja, sugerencia o queres trabajar con nosotros? Contactanos ahora!" />
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <!-- Header -->
     <header class="header header--others">
       <nav class="header__nav">
         <ul
-          class="header__nav__ul  header__nav__ul--noliStyle header__nav__ul--horizontal"
+          class="header__nav__ul header__nav__ul--noliStyle header__nav__ul--horizontal"
         >
-        <li>
-          <a href="./../index.html" class="header__nav__ul__li--indexText"
-            >Inicio</a
-          >
-        </li>
           <li>
-            <a href="sobrenos.html" class="header__nav__ul__li--indexText"
-              >Sobre nos</a
+            <a href="./../index.html" class="header__nav__ul__li--pagesText"
+              >Inicio</a
             >
           </li>
           <li>
-            <a href="productos.html" class="header__nav__ul__li--indexText"
-              >Productos</a
+            <a href="marca.html" class="header__nav__ul__li--pagesText"
+              >Marca</a
             >
           </li>
           <li>
-            <a href="contacto.html" class="header__nav__ul__li--indexText"
+            <a href="catalogo.html" class="header__nav__ul__li--pagesText"
+              >Catalogo</a
+            >
+          </li>
+          <li>
+            <a href="contacto.html" class="header__nav__ul__li--pagesText"
               >Contacto</a
             >
           </li>
           <li>
-            <a
-              href="faq.html"
-              class="header__nav__ul__li--indexText"
-              >FAQ</a
-            >
+            <a href="faq.html" class="header__nav__ul__li--pagesText">FAQ</a>
           </li>
         </ul>
       </nav>
     </header>
     <!-- Formulario -->
     <main>
-      <div class="container">
-        <div class="row">
-        
-          <div class="col-md-4">
-          <form>
-          <div class="form-container" data-form-container>
-          <div class="row">
-            <div class="form-title">
-              <span>Contact Us</span>
+      <section id="contact">
+        <h1 class="section-header">Contactanos</h1>
+        <div class="contact-wrapper">
+          <!-- Left contact page -->
+          <form id="contact-form" class="form-horizontal" role="form">
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="NAME"
+                  name="name"
+                  value=""
+                  required
+                />
+              </div>
             </div>
-          </div>
-          <div class="input-container">
-            <div class="row">
-              <span class="req-input" >
-                <span class="input-status" data-toggle="tooltip" data-placement="top" title="Input Your First and Last Name."> </span>
-                <input type="text" data-min-length="8" placeholder="Nombre">
-              </span>
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="EMAIL"
+                  name="email"
+                  value=""
+                  required
+                />
+              </div>
             </div>
-            <div class="row">
-              <span class="req-input">
-                <span class="input-status" data-toggle="tooltip" data-placement="top" title="Please Input Your Email."> </span>
-                <input type="email" placeholder="Email">
-              </span>
-            </div>
-            <div class="row">
-              <span class="req-input">
-                <span class="input-status" data-toggle="tooltip" data-placement="top" title="Please Input Your Phone Number."> </span>
-                <input type="tel" placeholder="Telefono">
-              </span>
-            </div>
-            <div class="row">
-              <span class="req-input message-box">
-                <span class="input-status" data-toggle="tooltip" data-placement="top" title="Please Include a Message."> </span>
-                <textarea type="textarea" data-min-length="10" placeholder="Mensaje"></textarea>
-            </div>
-            <div class="row submit-row">
-              <button type="button" class="btn btn-block submit-form">Enviar</button>
-            </div>
-          </div>
-          </div>
+            <textarea
+              class="form-control"
+              rows="10"
+              placeholder="MESSAGE"
+              name="message"
+              required
+            ></textarea>
+            <button
+              class="btn btn-primary send-button"
+              id="submit"
+              type="submit"
+              value="SEND"
+            >
+              <div class="alt-send-button">
+                <i class="fa fa-paper-plane"></i
+                ><span class="send-text">ENVIAR</span>
+              </div>
+            </button>
           </form>
+          <!-- Left contact page -->
+          <div class="direct-contact-container">
+            <ul class="contact-list">
+              <li class="list-item">
+                <i class="fa fa-map-marker fa-2x"
+                  ><span class="contact-text place">CABA, Argentina</span></i
+                >
+              </li>
+              <li class="list-item">
+                <i class="fa fa-phone fa-2x"
+                  ><span class="contact-text phone"
+                    ><a href="tel:1-212-555-5555" title="Give me a call"
+                      >(54) 9 11 6052-1999</a
+                    ></span
+                  ></i
+                >
+              </li>
+              <li class="list-item">
+                <i class="fa fa-envelope fa-2x"
+                  ><span class="contact-text gmail"
+                    ><a href="mailto:#" title="Send me an email"
+                      >calliestreet@gmail.com</a
+                    ></span
+                  ></i
+                >
+              </li>
+            </ul>
+            <hr />
+            <ul class="social-media-list">
+              <li>
+                <a href="#" target="_blank" class="contact-icon">
+                  <i class="fa fa-github" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" target="_blank" class="contact-icon">
+                  <i class="fa fa-codepen" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" target="_blank" class="contact-icon">
+                  <i class="fa fa-twitter" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" target="_blank" class="contact-icon">
+                  <i class="fa fa-instagram" aria-hidden="true"></i
+                ></a>
+              </li>
+            </ul>
+            <hr />
+            <div class="copyright">&copy; Todos los derechos reservados</div>
+          </div>
         </div>
+      </section>
     </main>
-       <!-- Footer -->
+    <!-- Footer -->
     <footer class="footer">
       <p class="footer__text">
         <span class="footer__text--white">&copy; Made by Federico Parisi</span>
       </p>
     </footer>
+    <script type="text/javascript" src="./../js/form.js"></script>
   </body>
 </html>
