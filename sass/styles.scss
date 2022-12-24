@@ -24,6 +24,7 @@
 }
 
 @import "./variables";
+@import "./fullscreennav";
 @import "./form";
 @import "./brandcard.scss";
 
@@ -146,7 +147,7 @@ a:hover {
 
 /* Video */
 
-.content__video {
+.content__video--size {
   width: 100%;
   height: 100%;
   object-fit: fill;
@@ -327,6 +328,74 @@ background-color: rgb(117, 45, 45);
 .accordion__p--center {
   text-align: center;
 }
+
+/*Media Queries*/
+
+@media (max-width: 575.98px) { 
+  .header--index {
+    display: none; 
+  }
+
+  .bar {
+    display: none;
+  }
+
+  .menu {
+    display: unset;
+  }
+
+  .content__video--size {
+    position: absolute;
+     z-index: -1;
+     left: 0;
+     width: 100%; 
+ }
+ }
+
+
+@media (max-width: 767.98px) {
+  .header--index {
+    display: none; 
+  }
+
+  .bar {
+    display: none;
+  }
+
+  .menu {
+    display: unset;
+  }
+
+
+  .content__video--size {
+    position: absolute;
+     z-index: -1;
+     left: 0;
+     width: 100%; 
+ }
+ }
+
+
+@media (max-width: 991.98px) { 
+  .header--index {
+  display: none; 
+}
+
+.bar {
+  display: none;
+}
+
+.menu {
+  display: unset;
+}
+
+.content__video--size {
+  position: absolute;
+   z-index: -1;
+   left: 0;
+   width: 100%; 
+}
+ }
 
 /*Animaciones*/
 

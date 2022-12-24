@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="tienda online, ropa, moda" />
     <title>Callie Street</title>
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
@@ -11,21 +12,21 @@
     <!-- Header -->
     <header class="header header--index">
       <div class="header__title--position">
-        <h1 class="header__title--callie" >CALLiE</h1> <h2
-        class="header__nav__title--street">STREET</h2>
+        <h1 class="header__title--callie">CALLiE</h1>
+        <h2 class="header__nav__title--street">STREET</h2>
       </div>
       <nav class="header__nav">
         <div class="box">
           <ul
             class="header__nav__ul--margin header__nav__ul--noliStyle header__nav__ul--gap"
           >
-          <li class="header__nav__ul_li--menu">
-            <a
-              href="paginas/catalogo.html"
-              class="header__nav__ul__li--indexText"
-              >Catalogo</a
-            >
-          </li>
+            <li class="header__nav__ul_li--menu">
+              <a
+                href="paginas/catalogo.html"
+                class="header__nav__ul__li--indexText"
+                >Catalogo</a
+              >
+            </li>
             <li class="header__nav__ul_li--menu">
               <a
                 href="paginas/marca.html"
@@ -49,9 +50,22 @@
         </div>
       </nav>
     </header>
+    <!-- Header 2-->
+    <nav id='navbar'>
+      <a href="index.html">Inicio</a>
+      <a href="paginas/marca.html">Marca</a>
+      <a href="paginas/catalogo.html">Catalogo</a>
+      <a href="paginas/contacto.html">Contacto</a>
+    </nav>
+    <div class="menu" id='menu'>
+      <div id="top"></div>
+      <div id="middle"></div>
+      <div id="bottom"></div>
+    </div>
+    <!-- Video -->
     <aside class="content">
       <video
-        class="content__video"
+        class="content__video--size"
         src="./../assets/videotemporalindex.mp4"
         autoplay
         loop
@@ -66,5 +80,6 @@
         <span class="footer__text--white">&copy; Made by Federico Parisi</span>
       </p>
     </footer>
+    <script type="text/javascript" src="./js/fsnav.js"></script>
   </body>
 </html>
